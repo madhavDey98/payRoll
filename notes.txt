@@ -1,0 +1,7 @@
+1) All blue will be changed to logo blue (Done)
+2)Tiles hover and Shadow by Arko da (Only Logo) (Done)
+3)Pricing Sec -: a) Remove per employee and add Btn
+                b) Row Gap uneven
+4)Testimonial instead of slider
+5)Make contact us sec (Done)
+6)Make a notification (Sweet Alert) (Donr)

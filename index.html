@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>PayRoll</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light" style="background-color: #f5f5f5 !important">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/main_logo.svg" alt="" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <span class="navFont"><a class="nav-link active" aria-current="page" href="#heroSec">Home</a></span>
+            </li>
+            <li class="nav-item">
+              <span class="navFont"><a class="nav-link active" href="#invest_Slides">Options</a></span>
+            </li>
+            <li class="nav-item">
+              <span class="navFont"><a class="nav-link active" href="#Price_List">Pricing</a></span>
+            </li>
+            <li class="nav-item">
+              <span class="navFont"><a class="nav-link active" href="#faq_sec">FAQ's</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ************* -->
+
+    <div class="homePage">
+      <!-- Hero -->
+      <div class="container px-md-0">
+        <div class="hero" id="heroSec">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active col-md-12">
+                <div class="row">
+                  <div class="leftDesign col-md-6 col-12">
+                    <h2>Payroll At Ease</h2>
+                    <p>
+                      Easy Payroll for any business. <br />
+                      Enjoy the ease and perfection of managing employees.
+                    </p>
+                    <div class="btn btn-primary">Contact For Demo</div>
+                  </div>
+                  <div class="rightDesign col-md-6 col-12 text-center">
+                    <img class="img-fluid" src="./img/bharatpe_loan.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item col-md-12">
+                <div class="row">
+                  <div class="leftDesign col-md-6 col-12">
+                    <h2>compliance At Ease</h2>
+                    <p>Automates salaries and manage compliances like TDS, PF, ESI, PT, and much more!</p>
+                    <div class="btn btn-primary">Contact For Demo</div>
+                  </div>
+                  <div class="rightDesign col-md-6 col-12 text-center">
+                    <img class="img-fluid" src="./img/bharatSwipe@2x.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item col-md-12">
+                <div class="row">
+                  <div class="leftDesign col-md-6 col-12">
+                    <h2>Attendance At Ease</h2>
+                    <p>Automate attendance and over-time calculations using our Attendance Mobile App.</p>
+                    <div class="btn btn-primary">Contact For Demo</div>
+                  </div>
+                  <div class="rightDesign col-md-6 col-12 text-center">
+                    <img class="img-fluid" src="./img/d2r-banner.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- **** -->
+
+      <div class="container px-md-0">
+        <div class="threePoint">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h3>Secure</h3>
+              <hr class="point" />
+              <h4>Easy onboarding, no account minimums. Invest in fractional stocks</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h3>Secure</h3>
+              <hr class="point" />
+              <h4>Easy onboarding, no account minimums. Invest in fractional stocks</h4>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <h3>Secure</h3>
+              <hr class="point" />
+              <h4>Easy onboarding, no account minimums. Invest in fractional stocks</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid btnSlides" id="invest_Slides">
+        <div class="text row">
+          <div class="m-auto text-center padding-top col-lg-6 col-md-10 col-sm-8">
+            <h2>Global investment options, made for everyone</h2>
+          </div>
+          <div class="selection">
+            <div class="container">
+              <div id="carouselExampleIndicators_card" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators_card"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                    Invest
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators_card"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                    Saving
+                  </button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators_card"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                    Stack
+                  </button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card-col-sec row">
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-col-sec row">
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card-col-sec row">
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-6">
+                        <div class="cardToShow marginTop-5">
+                          <div class="inner-card">
+                            <div class="icon">
+                              <i class="fa-solid fa-users"></i>
+                            </div>
+                            <h4>Quick Employee onboarding</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mediaSlider">
+        <div class="insideSlider row">
+          <div class="slider text-center col-lg-12 slider-for">
+            <div class="slider_items">
+              <h4>"HDFC Bank, HDFC Securities invest $1 mn in global investing platform Stockal"</h4>
+            </div>
+            <div class="slider_items">
+              <h4>"Indians placed record bets on US stocks in 2021"</h4>
+            </div>
+            <div class="slider_items">
+              <h4>"We did The Indians placed record bets on US stocks in 2021"</h4>
+            </div>
+            <div class="slider_items">
+              <h4>"Indians placed record bets on US stocks in 2021"</h4>
+            </div>
+            <div class="slider_items">
+              <h4>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam exercitationem title-5"</h4>
+            </div>
+          </div>
+          <div class="slider col-lg-12 slider-nav">
+            <div class="slider_items">
+              <img src="./img/sto-ET.png" alt="" />
+            </div>
+            <div class="slider_items">
+              <img src="./img/sto-Inshorts.png" alt="" />
+            </div>
+            <div class="slider_items">
+              <img src="./img/sto-Livemint.png" alt="" />
+            </div>
+            <div class="slider_items">
+              <img src="./img/sto-MoneyControl.png" alt="" />
+            </div>
+            <div class="slider_items">
+              <img src="./img/sto-The_Hindu.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mediaSliderTwo">
+        <div class="insideSliderTwo text-center">
+          <img src="./img/colon.webp" alt="" class="img-fluid colon" />
+          <div class="singleTrans">
+            <div class="mediaElm">
+              <p>
+                " This is the best product Lorem ipsom dolor sto-Inshort Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat quae suscipit distinctio delectus velit provident quia "
+              </p>
+              <img src="./img/user.jpg" alt="" class="img-fluid userImage text-center" />
+              <h4>Jack Ryan.</h4>
+            </div>
+            <div class="mediaElm">
+              <p>
+                " This is the best product Lorem ipsom dolor sto-Inshort Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat quae suscipit distinctio delectus velit provident quia "
+              </p>
+              <img src="./img/user.jpg" alt="" class="img-fluid userImage" />
+              <h4>Lilith Wilmar.</h4>
+            </div>
+            <div class="mediaElm">
+              <p>
+                " This is the best product Lorem ipsom dolor sto-Inshort Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat quae suscipit distinctio delectus velit provident quia "
+              </p>
+              <img src="./img/user.jpg" alt="" class="img-fluid userImage" />
+              <h4>Goldie Smith.</h4>
+            </div>
+            <div class="mediaElm">
+              <p>
+                " This is the best product Lorem ipsom dolor sto-Inshort Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat quae suscipit distinctio delectus velit provident quia "
+              </p>
+              <img src="./img/user.jpg" alt="" class="img-fluid userImage" />
+              <h4>Jacky Gustav.</h4>
+            </div>
+            <div class="mediaElm">
+              <p>
+                " This is the best product Lorem ipsom dolor sto-Inshort Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat quae suscipit distinctio delectus velit provident quia "
+              </p>
+              <img src="./img/user.jpg" alt="" class="img-fluid userImage" />
+              <h4>Micky Mouse.</h4>
+            </div>
+            <div class="mediaElm">
+              <p>
+                " This is the best product Lorem ipsom dolor sto-Inshort Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quaerat quae suscipit distinctio delectus velit provident quia "
+              </p>
+              <img src="./img/user.jpg" alt="" class="img-fluid userImage" />
+              <h4>Jack Ryan.</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="insideSection mx-auto text-center section-companion col-lg-9 col-md-9 col-sm-12">
+          <h2>More than just an investment platform - a smart companion</h2>
+          <div class="companion-img text-center col-lg-12 col-md-12 col-sm-12">
+            <img src="./img/companion-image-mobile-e35f160c032ea86bd2a42a9b28575de6.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+
+        <div class="content_LR">
+          <div class="content_Right">
+            <div class="companion-content-right row">
+              <div class="col-md-6 order-1 order-md-2">
+                <div class="text_desp">
+                  <p class="lr_Tittle">Realtime Stock Alert</p>
+                  <div class="companion-hr"></div>
+                  <p class="lr_desp">
+                    Get live prices, latest news, analyst opinions and other relevant updates on the stocks and ETFs you would
+                    like to research
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="img_desp">
+                  <img src="./img/left_right.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_Left">
+            <div class="companion-content-right row">
+              <div class="col-md-6 order-2 order-md-2">
+                <div class="img_desp">
+                  <img src="./img/left_right.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6 order-1 order-md-1">
+                <div class="text_desp">
+                  <p class="lr_Tittle">Realtime Stock Alert</p>
+                  <div class="companion-hr"></div>
+                  <p class="lr_desp">
+                    Get live prices, latest news, analyst opinions and other relevant updates on the stocks and ETFs you would
+                    like to research
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_Right">
+            <div class="companion-content-right row">
+              <div class="col-md-6 order-1 order-md-2">
+                <div class="text_desp">
+                  <p class="lr_Tittle">Realtime Stock Alert</p>
+                  <div class="companion-hr"></div>
+                  <p class="lr_desp">
+                    Get live prices, latest news, analyst opinions and other relevant updates on the stocks and ETFs you would
+                    like to research
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 order-2 order-md-1">
+                <div class="img_desp">
+                  <img src="./img/left_right.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="content_Left">
+            <div class="companion-content-left">
+              <div class="img_desp">
+                <img src="./img/companion-image-mobile-e35f160c032ea86bd2a42a9b28575de6.png" class="img-fluid" alt="" />
+              </div>
+              <div class="text_desp">
+                <p class="lr_Tittle">Realtime Stock Alert</p>
+                <div class="companion-hr"></div>
+                <p class="lr_desp">
+                  Get live prices, latest news, analyst opinions and other relevant updates on the stocks and ETFs you would like
+                  to research
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content_Right">
+            <div class="text_desp">
+              <p class="lr_Tittle">Realtime Stock Alert</p>
+              <div class="companion-hr"></div>
+              <p class="lr_desp">
+                Get live prices, latest news, analyst opinions and other relevant updates on the stocks and ETFs you would like to
+                research
+              </p>
+            </div>
+            <div class="img_desp">
+              <img src="./img/companion-image-mobile-e35f160c032ea86bd2a42a9b28575de6.png" class="img-fluid" alt="" />
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="pricing_Section" id="Price_List">
+          <h2 class="text-center p-head">Pricing</h2>
+          <div class="grid_row_top">
+            <div class="header_first">
+              <h4>Pricing List</h4>
+            </div>
+            <div class="header_second text-center">
+              <h4>Pro Plan</h4>
+              <h3>$100/month</h3>
+              <button class="btn btn-success">Try Now</button>
+            </div>
+            <div class="header_third text-center">
+              <h4>Free Plan</h4>
+              <h3>$0/month</h3>
+              <button class="btn btn-success">Try Now</button>
+            </div>
+            <div class="header_fourth text-center">
+              <h4>Others</h4>
+              <h3>$1500/month</h3>
+              <button class="btn btn-success">Try Now</button>
+            </div>
+          </div>
+          <div class="grid_row_bottom">
+            <div class="row_left">
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+              <div class="label-body">Payroll Processing</div>
+            </div>
+            <div class="row_right">
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+              <div class="listItemRowise">
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+                <img class="imgTick" src="./img/tick.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="signUpSec">
+          <div class="insideSignUp row">
+            <div class="col-md-6 col-sm-12 lefttSignUp">
+              <div class="row">
+                <div class="col-12">
+                  <div class="duplets">
+                    <div class="leftDuple">
+                      <img src="./img/dupleIcon.svg" alt="" />
+                    </div>
+                    <div class="rightDuple">
+                      <h2>660,000+</h2>
+                      <p>Trades Successfully Made</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="duplets">
+                    <div class="leftDuple">
+                      <img src="./img/dupleIcon.svg" alt="" />
+                    </div>
+                    <div class="rightDuple">
+                      <h2>$685 Million+</h2>
+                      <p>Transaction Value</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="duplets">
+                    <div class="leftDuple">
+                      <img src="./img/dupleIcon.svg" alt="" />
+                    </div>
+                    <div class="rightDuple">
+                      <h2>280,000+</h2>
+                      <p>Happy Users</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 rightSignUp">
+              <h2>Sign up and dive into a whole new world of investing.</h2>
+              <p>Join over 280,000 users who have signed up and are using Stockal successfully already.</p>
+              <form>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <button class="subSignUp btn btn-success">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid faq_Slider" id="faq_sec">
+        <div class="text-center faq_Tittle">
+          <h2>
+            Have Some unanswered <br />
+            question?
+          </h2>
+        </div>
+        <div class="row faq_section">
+          <div class="multiple-items">
+            <div class="stackPart col-lg-4">
+              <div class="">
+                <h4>How Does It Work?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur accusamus, reiciendis ullam et
+                  exercitationem possimus ad consequatur minus, impedit nesciunt repellat veritatis nemo eaque. Provident fugit
+                  accusantium consectetur eos.
+                </p>
+              </div>
+            </div>
+            <div class="stackPart col-lg-4">
+              <div class="">
+                <h4>How Does It Work?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur accusamus, reiciendis ullam et
+                  exercitationem possimus ad consequatur minus, impedit nesciunt repellat veritatis nemo eaque. Provident fugit
+                  accusantium consectetur eos.
+                </p>
+              </div>
+            </div>
+            <div class="stackPart col-lg-4">
+              <div class="">
+                <h4>How Does It Work?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur accusamus, reiciendis ullam et
+                  exercitationem possimus ad consequatur minus, impedit nesciunt repellat veritatis nemo eaque. Provident fugit
+                  accusantium consectetur eos.
+                </p>
+              </div>
+            </div>
+            <div class="stackPart col-lg-4">
+              <div class="">
+                <h4>How Does It Work?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur accusamus, reiciendis ullam et
+                  exercitationem possimus ad consequatur minus, impedit nesciunt repellat veritatis nemo eaque. Provident fugit
+                  accusantium consectetur eos.
+                </p>
+              </div>
+            </div>
+            <div class="stackPart col-lg-4">
+              <div class="">
+                <h4>How Does It Work?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur accusamus, reiciendis ullam et
+                  exercitationem possimus ad consequatur minus, impedit nesciunt repellat veritatis nemo eaque. Provident fugit
+                  accusantium consectetur eos.
+                </p>
+              </div>
+            </div>
+            <div class="stackPart col-lg-4">
+              <div class="">
+                <h4>How Does It Work?</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur accusamus, reiciendis ullam et
+                  exercitationem possimus ad consequatur minus, impedit nesciunt repellat veritatis nemo eaque. Provident fugit
+                  accusantium consectetur eos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="contact_Sec">
+          <div class="inside_Sec row">
+            <h2 class="text-center p-head">Happy To Help</h2>
+            <div class="col-12 col-md-6">
+              <div class="leftSide">
+                <img src="./img/main_logo.svg" alt="" class="img-fluid" />
+                <div class="cont_info">
+                  <div class="emailContact">
+                    <h4 class="conLabel">Email -:</h4>
+                    <p><span class="conVal">sales@payrollease.in</span></p>
+                  </div>
+                  <div class="mobileContact">
+                    <h4 class="conLabel">Mobile -:</h4>
+                    <p><span class="conVal">+919830498602</span></p>
+                  </div>
+                  <div class="addresssContact">
+                    <h4 class="conLabel">Address -:</h4>
+                    <p>
+                      <span class="conVal"
+                        >71, Manasbhumi Lane,<br />
+                        Manikpur,<br />
+                        Kolkata - 700079.</span
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="rightSide">
+                <div class="sideimg text-center">
+                  <img src="./img/contact.svg" alt="" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- *************Footer*********** -->
+    <div class="footerSection">
+      <footer>
+        <div class="container">
+          <div class="insFooter">
+            <div class="firstPartFooter row">
+              <div class="col-md-6">
+                <div class="img-fluid"><img src="./img/main_logo.svg" alt="" /></div>
+                <p>
+                  Payroll Ease enables easy employee management, fueled by automated attendance, timely salaries, compliance
+                  fulfillment and much more.
+                </p>
+              </div>
+              <div class="col-md-3">
+                <div class="services">
+                  <div class="footHead">
+                    <h3>Services</h3>
+                  </div>
+                  <div class="footdesp">
+                    <ul>
+                      <li>Home</li>
+                      <li>Features</li>
+                      <li>Pricing</li>
+                      <li>Faq</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="company">
+                  <div class="footHead">
+                    <h3>Services</h3>
+                  </div>
+                  <div class="footdesp">
+                    <ul>
+                      <li>Home</li>
+                      <li>Features</li>
+                      <li>Pricing</li>
+                      <li>Faq</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="copy-wright">
+      <div class="lastPartFooter row">
+        <div class="col-12">
+          <div class="copywright">
+            <p>Copyright © 2022. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+</html>
