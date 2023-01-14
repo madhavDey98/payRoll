@@ -25,6 +25,10 @@
     <title>PayRoll</title>
   </head>
   <body>
+    <div class="progress-container fixed-top">
+      <span class="progress-bar"></span>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light" style="background-color: #f5f5f5 !important">
       <div class="container-fluid">
@@ -52,6 +56,9 @@
             </li>
             <li class="nav-item">
               <span class="navFont"><a class="nav-link active" href="#faq_sec">FAQ's</a></span>
+            </li>
+            <li class="nav-item">
+              <span class="navFont"><a class="nav-link active" href="./partner.html">Partners</a></span>
             </li>
           </ul>
         </div>
@@ -908,7 +915,13 @@
       <div class="lastPartFooter row">
         <div class="col-12">
           <div class="copywright">
-            <p>Copyright © 2022. All Rights Reserved.</p>
+            <p>
+              Copyright ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              . All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>
