@@ -332,14 +332,15 @@ h4 {
 }
 
 .grid_row_top,
-.listItemRowise,
 .grid_row_bottom {
   display: flex;
 }
 
 .row_right {
-  margin: 0;
-  width: 75%;
+  /* margin: 0; */
+  /* width: 75%; */
+  display: flex;
+  margin-inline: auto;
 }
 .label-body {
   padding: 20px 1rem;
@@ -347,11 +348,16 @@ h4 {
   border-bottom: 2px solid #eaeaea;
 }
 .listItemRowise {
-  padding: 25.5px 1.5rem;
+  /* padding: 25.5px 1.5rem; */
   border-bottom: 2px solid #eaeaea;
+  border-bottom: 2px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  margin-inline: 7rem;
 }
 img.imgTick {
   margin-inline: auto;
+  margin-block: auto;
 }
 .pricing_Section {
   width: 90%;
@@ -704,8 +710,8 @@ button.btn.btn-success:hover {
   .header_first h4 {
     padding: 16px;
   }
-  .carousel-inner {
-    overflow: visible !important;
+  .selection .carousel-inner {
+    height: 55rem;
   }
   .selection .carousel-inner {
     margin-top: 4rem;
@@ -731,6 +737,9 @@ button.btn.btn-success:hover {
     padding: 5px 10px;
     border-radius: 5px;
     letter-spacing: 2px;
+  }
+  .listItemRowise {
+    margin-inline: 0;
   }
 }
 /* ***********Progress Bar************ */
@@ -876,9 +885,6 @@ ul {
   font-weight: 600;
   margin-top: 2rem;
 }
-.moreRewList {
-  margin-top: 5rem;
-}
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
   .innerEarn {
     flex-direction: column;
@@ -932,9 +938,6 @@ ul {
     width: 100%;
     top: -15px;
     left: 0px;
-  }
-  .moreRewList {
-    margin-top: 0;
   }
 }
 /* *********************************** */
