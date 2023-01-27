@@ -704,8 +704,8 @@ button.btn.btn-success:hover {
   .header_first h4 {
     padding: 16px;
   }
-  .carousel-inner {
-    overflow: visible !important;
+  .selection .carousel-inner {
+    height: 55rem;
   }
   .selection .carousel-inner {
     margin-top: 4rem;
